@@ -1,0 +1,69 @@
+# ==========================================
+# Root .gitignore for Smart Document Analyzer
+# ==========================================
+
+# Virtual Environments
+backend/venv/
+backend/env/
+**/venv/
+**/.venv/
+**/env/
+
+# Python Cache & Bytecode
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+.pytest_cache/
+
+# Databases & Vector Stores (Local storage)
+backend/sql_app.db
+backend/sql_app.db-journal
+backend/chroma_db/
+backend/uploaded_docs/
+backend/dummy.txt
+*.db
+*.sqlite
+*.sqlite3
+
+# Node & Next.js
+frontend/node_modules/
+frontend/.next/
+**/node_modules/
+**/.next/
+frontend/out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment Variables & Secrets
+**/.env
+**/.env*.local
+!**/.env.example
+*.pem
+*.key
+
+# Logs & Diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+AGENTS.md
+CLAUDE.md
+**/AGENTS.md
+**/CLAUDE.md
+
+# Temporary test outputs
+test_*.pdf
